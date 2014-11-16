@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 065b6b9c5d07448c7a6614030dd5cbdb
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Butt
+    100002: head1
+    100004: headtop
+    100006: Joint_2
+    100008: Joint_3
+    100010: left_arm
+    100012: left_foot
+    100014: left_frontarm
+    100016: left_hand
+    100018: left_hip
+    100020: left_knee
+    100022: left_toe
+    100024: left_wrist
+    100026: neck
+    100028: neck2
+    100030: People_2
+    100032: right_arm
+    100034: right_foot
+    100036: right_frontarm
+    100038: right_hand
+    100040: right_hip
+    100042: right_knee
+    100044: right_toe
+    100046: right_wrist
+    100048: Root
+    100050: Skin
+    100052: //RootNode
+    400000: Butt
+    400002: head1
+    400004: headtop
+    400006: Joint_2
+    400008: Joint_3
+    400010: left_arm
+    400012: left_foot
+    400014: left_frontarm
+    400016: left_hand
+    400018: left_hip
+    400020: left_knee
+    400022: left_toe
+    400024: left_wrist
+    400026: neck
+    400028: neck2
+    400030: People_2
+    400032: right_arm
+    400034: right_foot
+    400036: right_frontarm
+    400038: right_hand
+    400040: right_hip
+    400042: right_knee
+    400044: right_toe
+    400046: right_wrist
+    400048: Root
+    400050: Skin
+    400052: //RootNode
+    4300000: People_2
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: People_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: People_2
+        weight: 1
+      - path: People_2/Skin
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Butt
+        weight: 1
+      - path: Root/Butt/Joint_2
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/left_arm
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/left_arm/left_frontarm
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/left_arm/left_frontarm/left_wrist
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/left_arm/left_frontarm/left_wrist/left_hand
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/neck2
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/neck2/head1
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/neck2/head1/headtop
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/right_arm
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/right_arm/right_frontarm
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/right_arm/right_frontarm/right_wrist
+        weight: 1
+      - path: Root/Butt/Joint_2/Joint_3/neck/right_arm/right_frontarm/right_wrist/right_hand
+        weight: 1
+      - path: Root/Butt/left_hip
+        weight: 1
+      - path: Root/Butt/left_hip/left_knee
+        weight: 1
+      - path: Root/Butt/left_hip/left_knee/left_foot
+        weight: 1
+      - path: Root/Butt/left_hip/left_knee/left_foot/left_toe
+        weight: 1
+      - path: Root/Butt/right_hip
+        weight: 1
+      - path: Root/Butt/right_hip/right_knee
+        weight: 1
+      - path: Root/Butt/right_hip/right_knee/right_foot
+        weight: 1
+      - path: Root/Butt/right_hip/right_knee/right_foot/right_toe
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

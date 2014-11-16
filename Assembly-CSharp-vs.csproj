@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D0DF9011-827F-A480-F3F6-D67DF419C407}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\PocketRPG Trails\Scripts\Effects\WeaponTrail.cs" />
+     <Compile Include="Assets\PocketRPG Trails\Scripts\Entities\BladeMaster.cs" />
+     <Compile Include="Assets\PocketRPG Trails\Scripts\Utility\AnimationController.cs" />
+     <Compile Include="Assets\Scripts\Beginning\CameraJump.cs" />
+     <Compile Include="Assets\Scripts\Beginning\FadeIn.cs" />
+     <Compile Include="Assets\Scripts\Beginning\Title.cs" />
+     <Compile Include="Assets\Scripts\BookPage\BookPageControl.cs" />
+     <Compile Include="Assets\Scripts\Character\Bird.cs" />
+     <Compile Include="Assets\Scripts\Character\Hermit.cs" />
+     <Compile Include="Assets\Scripts\Character\King.cs" />
+     <Compile Include="Assets\Scripts\Character\Mouse.cs" />
+     <Compile Include="Assets\Scripts\Character\Servant.cs" />
+     <Compile Include="Assets\Scripts\Character\Thief.cs" />
+     <Compile Include="Assets\Scripts\General\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\General\CameraSwitcher.cs" />
+     <Compile Include="Assets\Scripts\General\CharSelBtn.cs" />
+     <Compile Include="Assets\Scripts\General\GameCharConst.cs" />
+     <Compile Include="Assets\Scripts\General\Instruction.cs" />
+     <Compile Include="Assets\Scripts\General\PlayerMovementController.cs" />
+     <Compile Include="Assets\Scripts\General\RoomName.cs" />
+     <Compile Include="Assets\Scripts\General\Scenes.cs" />
+     <Compile Include="Assets\Scripts\General\Tags.cs" />
+     <Compile Include="Assets\Scripts\General\Wall.cs" />
+     <Compile Include="Assets\Scripts\KingRoom\KeyShelfInKingRoom.cs" />
+     <Compile Include="Assets\Scripts\KingRoom\KingDoorKT.cs" />
+     <Compile Include="Assets\Scripts\KingRoom\KingDoorTK.cs" />
+     <Compile Include="Assets\Scripts\KingRoom\KingWindowKW.cs" />
+     <Compile Include="Assets\Scripts\KingRoom\KingWindowWK.cs" />
+     <Compile Include="Assets\Scripts\NewAnimationTest\Chase.cs" />
+     <Compile Include="Assets\Scripts\NewAnimationTest\FollowTarget.cs" />
+     <Compile Include="Assets\Scripts\NewAnimationTest\PeopleControl.cs" />
+     <Compile Include="Assets\Scripts\SelectCharater\BirdSelection.cs" />
+     <Compile Include="Assets\Scripts\SelectCharater\PeopleSelection.cs" />
+     <Compile Include="Assets\Scripts\ServantRoom\LetterShelfInHut.cs" />
+     <Compile Include="Assets\Scripts\ServantRoom\ServantDoorST.cs" />
+     <Compile Include="Assets\Scripts\ServantRoom\ServantDoorTS.cs" />
+     <Compile Include="Assets\Scripts\ServantRoom\ServantWindow.cs" />
+     <Compile Include="Assets\Scripts\TestScene\AppleBehavior.cs" />
+     <Compile Include="Assets\Scripts\TestScene\BackButton.cs" />
+     <Compile Include="Assets\Scripts\TestScene\BirdMove.cs" />
+     <Compile Include="Assets\Scripts\TestScene\HumanMove.cs" />
+     <Compile Include="Assets\Scripts\TestScene\LoopTest.cs" />
+     <Compile Include="Assets\Scripts\TestScene\TailControl.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\AreaForKeyInKingRoom.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\AreaForKeyInThroneRoom.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\DoorToTreasure.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\FirePlace.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\HealingPotionHolder.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\LetterHolderThrone.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\LogContainer.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\MedicineHolder.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\MouseHole.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\MouseTrap.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\PaperShelf.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\PotionShelf.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\RingHolder.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\ThroneButtons.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\ThroneGameController.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\WrongPotionHolder.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\CharSelTreasure.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\Clear.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\CrytalBall.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\DoorOfTreasureRoom.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\Key.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\KeyHolder.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\PearProtector.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\Pearl.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\Route.cs" />
+     <Compile Include="Assets\Scripts\TreasureRoom\TreasureGameController.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\AnimationWindowUtils.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Bone.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\ControlPoint.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Helper.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\InverseKinematics.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Pose.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Skeleton.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Skin2D.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Skin2DX.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\SkinMaker.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Polygon\Polygon.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Polygon\PolygonPoint.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Polygon\PolygonSet.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\DelaunayTriangle.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\AdvancingFront.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\AdvancingFrontNode.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweep.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepBasin.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepConstraint.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepContext.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepDebugContext.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepEdgeEvent.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\DTSweepPointComparator.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Delaunay\Sweep\PointOnEdgeException.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\ITriangulatable.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Orientation.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Sets\ConstrainedPointSet.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Sets\PointSet.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationAlgorithm.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationConstraint.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationContext.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationDebugContext.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationMode.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationPoint.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\TriangulationUtil.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Util\PointGenerator.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Triangulation\Util\PolygonGenerator.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Utility\FixedArray3.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Triangulation\Utility\FixedBitArray3.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\AnimationToPNG.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\BitmapHelper.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\Bone2DWeight.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\HSBColor.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\MeshHelper.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\PolygonMesh.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\SimplifyTools.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\SpriteMesh.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\Triangulator.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\Utils.cs" />
+     <Compile Include="Assets\SpritesAndBones\Scripts\Utils\Vertices.cs" />
+     <Compile Include="Assets\XWeaponTrail\Scripts\Spline.cs" />
+     <Compile Include="Assets\XWeaponTrail\Scripts\SplineControlPoint.cs" />
+     <Compile Include="Assets\XWeaponTrail\Scripts\VertexPool.cs" />
+     <Compile Include="Assets\XWeaponTrail\Scripts\XWeaponTrail.cs" />
+     <Compile Include="Assets\XWeaponTrail\Scripts\XWeaponTrailDemo.cs" />
+     <None Include="Assets\Shaders\Diffuse Texture.shader" />
+     <None Include="Assets\SpritesAndBones\license-attributions.txt" />
+     <None Include="Assets\Shaders\Transparent.shader" />
+     <None Include="Assets\Shaders\AlphaMask.shader" />
+     <None Include="Assets\XWeaponTrail\readme_english.txt" />
+     <None Include="Assets\XWeaponTrail\Model\readme.txt" />
+     <None Include="Assets\XWeaponTrail\readme_chinese.txt" />
+     <None Include="Assets\BirdTutorial\Info.txt" />
+     <None Include="Assets\XWeaponTrail\Shader\xft_displacement_screen.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>/Users/ke_li/UnityProjects/New Unity Project 3/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{C25C36C1-F437-8DA5-EE32-30E57563068F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

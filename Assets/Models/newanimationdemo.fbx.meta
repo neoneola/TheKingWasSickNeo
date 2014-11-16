@@ -1,0 +1,641 @@
+fileFormatVersion: 2
+guid: 990dcbc046f6241eab30b014ed0339ff
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body
+    100002: head
+    100004: head_2
+    100006: Joint
+    100008: Joint_1
+    100010: Joint_10
+    100012: Joint_10_2
+    100014: Joint_10_3
+    100016: Joint_10_4
+    100018: Joint_2
+    100020: Joint_2_2
+    100022: Joint_3
+    100024: Joint_3_2
+    100026: Joint_3_3
+    100028: Joint_5
+    100030: Joint_5_2
+    100032: Joint_6
+    100034: Joint_6_2
+    100036: Joint_6_3
+    100038: Joint_6_4
+    100040: Joint_6_5
+    100042: Joint_7
+    100044: Joint_7_2
+    100046: Joint_7_3
+    100048: Joint_7_4
+    100050: Joint_8
+    100052: Joint_8_2
+    100054: Joint_8_3
+    100056: Joint_9
+    100058: Joint_9_2
+    100060: left_arm
+    100062: left_foot
+    100064: left_foot_2
+    100066: left_frontarm
+    100068: left_hand
+    100070: left_hand_2
+    100072: left_hip
+    100074: left_knee
+    100076: left_wrist
+    100078: neck_body
+    100080: neck_head
+    100082: //RootNode
+    100084: pelvis
+    100086: people_1
+    100088: right_arm
+    100090: right_foot
+    100092: right_foot_2
+    100094: right_frontarm
+    100096: right_hand
+    100098: right_hand_2
+    100100: right_hip
+    100102: right_knee
+    100104: right_wrist
+    100106: Root
+    100108: Skin
+    100110: Skin_2
+    100112: Skin_3
+    100114: Skin_4
+    100116: Skin_5
+    100118: Skin_6
+    100120: top
+    400000: body
+    400002: head
+    400004: head_2
+    400006: Joint
+    400008: Joint_1
+    400010: Joint_10
+    400012: Joint_10_2
+    400014: Joint_10_3
+    400016: Joint_10_4
+    400018: Joint_2
+    400020: Joint_2_2
+    400022: Joint_3
+    400024: Joint_3_2
+    400026: Joint_3_3
+    400028: Joint_5
+    400030: Joint_5_2
+    400032: Joint_6
+    400034: Joint_6_2
+    400036: Joint_6_3
+    400038: Joint_6_4
+    400040: Joint_6_5
+    400042: Joint_7
+    400044: Joint_7_2
+    400046: Joint_7_3
+    400048: Joint_7_4
+    400050: Joint_8
+    400052: Joint_8_2
+    400054: Joint_8_3
+    400056: Joint_9
+    400058: Joint_9_2
+    400060: left_arm
+    400062: left_foot
+    400064: left_foot_2
+    400066: left_frontarm
+    400068: left_hand
+    400070: left_hand_2
+    400072: left_hip
+    400074: left_knee
+    400076: left_wrist
+    400078: neck_body
+    400080: neck_head
+    400082: //RootNode
+    400084: pelvis
+    400086: people_1
+    400088: right_arm
+    400090: right_foot
+    400092: right_foot_2
+    400094: right_frontarm
+    400096: right_hand
+    400098: right_hand_2
+    400100: right_hip
+    400102: right_knee
+    400104: right_wrist
+    400106: Root
+    400108: Skin
+    400110: Skin_2
+    400112: Skin_3
+    400114: Skin_4
+    400116: Skin_5
+    400118: Skin_6
+    400120: top
+    4300000: left_hand_2
+    4300002: left_foot_2
+    4300004: right_foot_2
+    4300006: body
+    4300008: head_2
+    4300010: right_hand_2
+    7400000: C4D Animation Take
+    7400002: C4D Animation Take0
+    7400004: C4D Animation Take1
+    9500000: //RootNode
+    13700000: body
+    13700002: head_2
+    13700004: left_foot_2
+    13700006: left_hand_2
+    13700008: right_foot_2
+    13700010: right_hand_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: people_1
+        weight: 1
+      - path: people_1/body
+        weight: 1
+      - path: people_1/body/Skin_4
+        weight: 1
+      - path: people_1/head_2
+        weight: 1
+      - path: people_1/head_2/Skin_5
+        weight: 1
+      - path: people_1/left_foot_2
+        weight: 1
+      - path: people_1/left_foot_2/Skin_2
+        weight: 1
+      - path: people_1/left_hand_2
+        weight: 1
+      - path: people_1/left_hand_2/Skin
+        weight: 1
+      - path: people_1/right_foot_2
+        weight: 1
+      - path: people_1/right_foot_2/Skin_3
+        weight: 1
+      - path: people_1/right_hand_2
+        weight: 1
+      - path: people_1/right_hand_2/Skin_6
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pelvis
+        weight: 1
+      - path: Root/pelvis/Joint_1
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist/left_hand
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3/top
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist/right_hand
+        weight: 1
+      - path: Root/pelvis/left_hip
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot/Joint_10_2
+        weight: 1
+      - path: Root/pelvis/right_hip
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot/Joint_10
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: C4D Animation Take0
+      takeName: C4D Animation Take
+      firstFrame: 51
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: people_1
+        weight: 1
+      - path: people_1/body
+        weight: 1
+      - path: people_1/body/Skin_4
+        weight: 1
+      - path: people_1/head_2
+        weight: 1
+      - path: people_1/head_2/Skin_5
+        weight: 1
+      - path: people_1/left_foot_2
+        weight: 1
+      - path: people_1/left_foot_2/Skin_2
+        weight: 1
+      - path: people_1/left_hand_2
+        weight: 1
+      - path: people_1/left_hand_2/Skin
+        weight: 1
+      - path: people_1/right_foot_2
+        weight: 1
+      - path: people_1/right_foot_2/Skin_3
+        weight: 1
+      - path: people_1/right_hand_2
+        weight: 1
+      - path: people_1/right_hand_2/Skin_6
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pelvis
+        weight: 1
+      - path: Root/pelvis/Joint_1
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist/left_hand
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3/top
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist/right_hand
+        weight: 1
+      - path: Root/pelvis/left_hip
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot/Joint_10_2
+        weight: 1
+      - path: Root/pelvis/right_hip
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot/Joint_10
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: C4D Animation Take1
+      takeName: C4D Animation Take
+      firstFrame: 45
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: people_1
+        weight: 1
+      - path: people_1/body
+        weight: 1
+      - path: people_1/body/Skin_4
+        weight: 1
+      - path: people_1/head_2
+        weight: 1
+      - path: people_1/head_2/Skin_5
+        weight: 1
+      - path: people_1/left_foot_2
+        weight: 1
+      - path: people_1/left_foot_2/Skin_2
+        weight: 1
+      - path: people_1/left_hand_2
+        weight: 1
+      - path: people_1/left_hand_2/Skin
+        weight: 1
+      - path: people_1/right_foot_2
+        weight: 1
+      - path: people_1/right_foot_2/Skin_3
+        weight: 1
+      - path: people_1/right_hand_2
+        weight: 1
+      - path: people_1/right_hand_2/Skin_6
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pelvis
+        weight: 1
+      - path: Root/pelvis/Joint_1
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/left_arm/Joint_6_4/Joint_7_4/left_frontarm/Joint_9_2/Joint_10_4/left_wrist/left_hand
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/neck_head/Joint_6_5/head/Joint_8_3/top
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist
+        weight: 1
+      - path: Root/pelvis/Joint_1/Joint_2_2/Joint_3_3/neck_body/right_arm/Joint_6_3/Joint_7_3/right_frontarm/Joint_9/Joint_10_3/right_wrist/right_hand
+        weight: 1
+      - path: Root/pelvis/left_hip
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot
+        weight: 1
+      - path: Root/pelvis/left_hip/Joint/Joint_3_2/left_knee/Joint_5_2/Joint_6_2/Joint_7_2/Joint_8_2/left_foot/Joint_10_2
+        weight: 1
+      - path: Root/pelvis/right_hip
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot
+        weight: 1
+      - path: Root/pelvis/right_hip/Joint_2/Joint_3/right_knee/Joint_5/Joint_6/Joint_7/Joint_8/right_foot/Joint_10
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
