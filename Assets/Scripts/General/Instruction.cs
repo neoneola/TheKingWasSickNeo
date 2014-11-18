@@ -134,7 +134,7 @@ public class Instruction : MonoBehaviour {
 		{
 			if(!king.getThroneRoomScene().getAction().didKingWarmHisHand_D){
 				text.color = new Color(1f, 1f, 1f, 1.0f);
-				text.text="Attempt to enter King’s Room";
+				text.text="The door is cold";
 			}else{
 				text.color = new Color(1f, 1f, 1f, 1.0f);
 				text.text="Enter King’s Room";

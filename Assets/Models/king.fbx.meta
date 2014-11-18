@@ -1,0 +1,586 @@
+fileFormatVersion: 2
+guid: ac7fe4bf711a3428c9d637fe2be18d37
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body
+    100002: chest
+    100004: fullpiececopy
+    100006: fullpieces
+    100008: head
+    100010: headbottom
+    100012: headtop
+    100014: Joint_1
+    100016: Joint_2
+    100018: Joint_2_2
+    100020: Joint_2_3
+    100022: Joint_3
+    100024: Joint_3_2
+    100026: Joint_5
+    100028: Joint_5_2
+    100030: Joint_6
+    100032: Joint_6_2
+    100034: Joint_7
+    100036: Joint_7_2
+    100038: Joint_9
+    100040: Joint_9_2
+    100042: //RootNode
+    100044: left_ankle
+    100046: left_arm
+    100048: left_foot
+    100050: left_knee
+    100052: left_leg
+    100054: left_leg_2
+    100056: left_shoulder
+    100058: limbscopy
+    100060: neck
+    100062: pivot
+    100064: reference
+    100066: right_arm
+    100068: right_elbow
+    100070: right_elbow_2
+    100072: right_foot
+    100074: right_hand
+    100076: right_hand_2
+    100078: right_knee
+    100080: right_leg
+    100082: right_leg_2
+    100084: right_shoulder
+    100086: right_wrist
+    100088: right_wrist_2
+    100090: riight_ankle
+    100092: Root
+    100094: Skin
+    100096: Skin_2
+    100098: Skin_3
+    100100: Skin_4
+    100102: Skin_5
+    100104: Skin_6
+    400000: body
+    400002: chest
+    400004: fullpiececopy
+    400006: fullpieces
+    400008: head
+    400010: headbottom
+    400012: headtop
+    400014: Joint_1
+    400016: Joint_2
+    400018: Joint_2_2
+    400020: Joint_2_3
+    400022: Joint_3
+    400024: Joint_3_2
+    400026: Joint_5
+    400028: Joint_5_2
+    400030: Joint_6
+    400032: Joint_6_2
+    400034: Joint_7
+    400036: Joint_7_2
+    400038: Joint_9
+    400040: Joint_9_2
+    400042: //RootNode
+    400044: left_ankle
+    400046: left_arm
+    400048: left_foot
+    400050: left_knee
+    400052: left_leg
+    400054: left_leg_2
+    400056: left_shoulder
+    400058: limbscopy
+    400060: neck
+    400062: pivot
+    400064: reference
+    400066: right_arm
+    400068: right_elbow
+    400070: right_elbow_2
+    400072: right_foot
+    400074: right_hand
+    400076: right_hand_2
+    400078: right_knee
+    400080: right_leg
+    400082: right_leg_2
+    400084: right_shoulder
+    400086: right_wrist
+    400088: right_wrist_2
+    400090: riight_ankle
+    400092: Root
+    400094: Skin
+    400096: Skin_2
+    400098: Skin_3
+    400100: Skin_4
+    400102: Skin_5
+    400104: Skin_6
+    2300000: fullpiececopy
+    2300002: limbscopy
+    2300004: reference
+    3300000: fullpiececopy
+    3300002: limbscopy
+    3300004: reference
+    4300000: limbscopy
+    4300002: reference
+    4300004: fullpiececopy
+    4300006: head
+    4300008: right_arm
+    4300010: left_arm
+    4300012: body
+    4300014: right_leg_2
+    4300016: left_leg_2
+    7400000: KingWalking
+    7400002: KingDyingOfMedicine
+    7400004: KingIdle
+    9500000: //RootNode
+    13700000: body
+    13700002: head
+    13700004: left_arm
+    13700006: left_leg_2
+    13700008: right_arm
+    13700010: right_leg_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: KingWalking
+      takeName: C4D Animation Take
+      firstFrame: 10
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: fullpiececopy
+        weight: 1
+      - path: fullpieces
+        weight: 1
+      - path: fullpieces/body
+        weight: 1
+      - path: fullpieces/body/Skin_4
+        weight: 1
+      - path: fullpieces/head
+        weight: 1
+      - path: fullpieces/head/Skin
+        weight: 1
+      - path: fullpieces/left_arm
+        weight: 1
+      - path: fullpieces/left_arm/Skin_3
+        weight: 1
+      - path: fullpieces/left_leg_2
+        weight: 1
+      - path: fullpieces/left_leg_2/Skin_6
+        weight: 1
+      - path: fullpieces/right_arm
+        weight: 1
+      - path: fullpieces/right_arm/Skin_2
+        weight: 1
+      - path: fullpieces/right_leg_2
+        weight: 1
+      - path: fullpieces/right_leg_2/Skin_5
+        weight: 1
+      - path: limbscopy
+        weight: 1
+      - path: reference
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pivot
+        weight: 1
+      - path: Root/pivot/Joint_1
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom/headtop
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2/right_hand_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist/right_hand
+        weight: 1
+      - path: Root/pivot/left_leg
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle/left_foot
+        weight: 1
+      - path: Root/pivot/right_leg
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle/right_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: KingDyingOfMedicine
+      takeName: C4D Animation Take
+      firstFrame: 40
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: fullpiececopy
+        weight: 1
+      - path: fullpieces
+        weight: 1
+      - path: fullpieces/body
+        weight: 1
+      - path: fullpieces/body/Skin_4
+        weight: 1
+      - path: fullpieces/head
+        weight: 1
+      - path: fullpieces/head/Skin
+        weight: 1
+      - path: fullpieces/left_arm
+        weight: 1
+      - path: fullpieces/left_arm/Skin_3
+        weight: 1
+      - path: fullpieces/left_leg_2
+        weight: 1
+      - path: fullpieces/left_leg_2/Skin_6
+        weight: 1
+      - path: fullpieces/right_arm
+        weight: 1
+      - path: fullpieces/right_arm/Skin_2
+        weight: 1
+      - path: fullpieces/right_leg_2
+        weight: 1
+      - path: fullpieces/right_leg_2/Skin_5
+        weight: 1
+      - path: limbscopy
+        weight: 1
+      - path: reference
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pivot
+        weight: 1
+      - path: Root/pivot/Joint_1
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom/headtop
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2/right_hand_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist/right_hand
+        weight: 1
+      - path: Root/pivot/left_leg
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle/left_foot
+        weight: 1
+      - path: Root/pivot/right_leg
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle/right_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: KingIdle
+      takeName: C4D Animation Take
+      firstFrame: 80
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: fullpiececopy
+        weight: 1
+      - path: fullpieces
+        weight: 1
+      - path: fullpieces/body
+        weight: 1
+      - path: fullpieces/body/Skin_4
+        weight: 1
+      - path: fullpieces/head
+        weight: 1
+      - path: fullpieces/head/Skin
+        weight: 1
+      - path: fullpieces/left_arm
+        weight: 1
+      - path: fullpieces/left_arm/Skin_3
+        weight: 1
+      - path: fullpieces/left_leg_2
+        weight: 1
+      - path: fullpieces/left_leg_2/Skin_6
+        weight: 1
+      - path: fullpieces/right_arm
+        weight: 1
+      - path: fullpieces/right_arm/Skin_2
+        weight: 1
+      - path: fullpieces/right_leg_2
+        weight: 1
+      - path: fullpieces/right_leg_2/Skin_5
+        weight: 1
+      - path: limbscopy
+        weight: 1
+      - path: reference
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/pivot
+        weight: 1
+      - path: Root/pivot/Joint_1
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/headbottom/headtop
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/left_shoulder/Joint_6_2/Joint_7_2/right_elbow_2/Joint_9_2/right_wrist_2/right_hand_2
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist
+        weight: 1
+      - path: Root/pivot/Joint_1/Joint_2_3/chest/neck/right_shoulder/Joint_6/Joint_7/right_elbow/Joint_9/right_wrist/right_hand
+        weight: 1
+      - path: Root/pivot/left_leg
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle
+        weight: 1
+      - path: Root/pivot/left_leg/Joint_2_2/Joint_3_2/left_knee/Joint_5_2/left_ankle/left_foot
+        weight: 1
+      - path: Root/pivot/right_leg
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle
+        weight: 1
+      - path: Root/pivot/right_leg/Joint_2/Joint_3/right_knee/Joint_5/riight_ankle/right_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

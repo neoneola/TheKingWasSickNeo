@@ -688,11 +688,15 @@ public class Servant : MonoBehaviour {
 		getThroneRoomScene ().getAction ().didServantTakeTooMuchMedicine_D = true;
 		GameCharConst.SERVANT_TAKE_TOO_MUCH_MEDICINE = true;
 		GameObject.Find("Servant").transform.FindChild("Servant").renderer.material.color = new Color(1f, 1f, 1f, 0.1f);
+
 		if(ThroneGameController.currentChar=="Servant")
-			Application.LoadLevel("CharacterSelectionForTreasure");
+			Invoke("dieAndReturenToSelection", 5.0f);
 	}
 
-
+	public void dieAndReturenToSelection()
+	{
+		Application.LoadLevel("CharacterSelectionForTreasure");
+	}
 
 	public void fireBigger()
 	{

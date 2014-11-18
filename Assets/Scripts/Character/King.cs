@@ -619,11 +619,11 @@ public class King : MonoBehaviour {
 		GameCharConst.KING_TAKE_TOO_MUCH_MEDICINE = true;
 
 		if(ThroneGameController.currentChar=="King")
-			Application.LoadLevel("CharacterSelectionForTreasure");
+
+			Invoke("dieAndReturenToSelection", 5.0f);
 
 		//Invoke ("dieAndReturenToSelection",0.5f);
 	}
-
 
 	public void dieAndReturenToSelection()
 	{
