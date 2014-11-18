@@ -10,6 +10,14 @@ public class PlayerMovementController : MonoBehaviour {
 	public bool hitAwall = false;
 	public bool hitRight = false;
 	public bool hitLeft = false;
+
+	private Servant servant;
+	private King king;
+	void Awake(){
+		servant = GameObject.FindGameObjectWithTag(Tags.SERVANT).GetComponent<Servant>();
+		king = GameObject.FindGameObjectWithTag(Tags.KING).GetComponent<King>();
+	}
+
 	// Use this for initialization
 	void Start () {
 	
@@ -54,6 +62,24 @@ public class PlayerMovementController : MonoBehaviour {
 				if(hitLeft){
 					horizontal = horizontal < 0 ? 0 : horizontal;
 				}
+			}
+		}
+
+		if(Mathf.Abs(horizontal) >= 0.01){
+			if(ThroneGameController.currentChar == "Servant"){
+				servant.walk();
+			}
+
+			if(ThroneGameController.currentChar == "King"){
+				king.walk();
+			}
+		}else{
+			if(ThroneGameController.currentChar == "Servant"){
+				servant.stopWalk();
+			}
+
+			if(ThroneGameController.currentChar == "King"){
+				king.stopWalk();
 			}
 		}
 

@@ -15,7 +15,8 @@ public class Servant : MonoBehaviour {
 
 	public bool canTakeMedicine=false;
 
-
+	private GameObject smallFire;
+	private GameObject bigFire;
 
 	private GameObject kingObj;
 	private King king;
@@ -77,6 +78,10 @@ public class Servant : MonoBehaviour {
 	private ThroneRoomScene throneRoomScene;
 	private ServantRoomScene servantRoomScene;
 
+
+	//animation
+	private Animator animator;
+
 	public ThroneRoomScene getThroneRoomScene()
 	{
 		if (throneRoomScene == null) 
@@ -110,7 +115,10 @@ public class Servant : MonoBehaviour {
 		kingObj=GameObject.Find("King");
 		king=kingObj.GetComponent<King>();
 
+		animator = transform.FindChild("servant").GetComponent<Animator>();
 
+		smallFire = GameObject.Find("Firesmall");
+		bigFire = GameObject.Find("Firesbig");
 
 	}
 
@@ -468,6 +476,18 @@ public class Servant : MonoBehaviour {
 	}
 
 
+	public void die(){
+		animator.SetBool("DieOfTooMuchMedicine", true);
+	}
+
+	public void walk(){
+		animator.SetBool("IsWalking", true);
+	}
+
+	public void stopWalk(){
+		animator.SetBool("IsWalking", false);
+	}
+
 	//**************memory part servantroom********************
 	public void startMemoryServantRoom(){
 		if (GameCharConst.SERVANT_PICK_THE_LETTER) 
@@ -506,15 +526,26 @@ public class Servant : MonoBehaviour {
 	//transform.position.x - targetPosition.x
 	private void checkFace(float diff){
 		if(diff > 0){
-			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+			Vector3 scale = transform.localScale;
+			if(scale.x < 0){
+				scale.x *= -1;
+			}
+
+			transform.localScale = scale;
 		}else{
-			transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+
+			Vector3 scale = transform.localScale;
+			if(scale.x > 0){
+				scale.x *= -1;
+			}
+			
+			transform.localScale = scale;
 		}
 	}
 
 	public bool gotoPostion(Vector2 targetPosition){
 		//transform.position = Vector2.Lerp(transform.position,targetPosition, Time.deltaTime);
-		
+		walk();
 		transform.position = Vector2.Lerp(transform.position,new Vector2( targetPosition.x,transform.position.y), Time.deltaTime);
 		checkFace(targetPosition.x - transform.position.x);
 		return checkTargetPosition(targetPosition);
@@ -566,7 +597,7 @@ public class Servant : MonoBehaviour {
 	{
 		Debug.Log("got the log");
 		GameObject.Find ("log").transform.renderer.enabled=false;
-		transform.FindChild("logOnServant").gameObject.renderer.enabled=true;
+		GameObject.Find("logOnServant").gameObject.renderer.enabled=true;
 		
 		getThroneRoomScene().getAction().didServantPickTheLog_D=true;
 		GameCharConst.SERVANT_PICK_THE_LOG=true;
@@ -575,7 +606,7 @@ public class Servant : MonoBehaviour {
 	public void dropLog()
 	{
 		Debug.Log("drop the log");
-		transform.FindChild("logOnServant").gameObject.renderer.enabled=false;
+		GameObject.Find("logOnServant").gameObject.renderer.enabled=false;
 		
 		getThroneRoomScene().getAction().didServantDropTheLog_D=true;
 		GameCharConst.SERVANT_DROP_THE_LOG=true;
@@ -588,7 +619,7 @@ public class Servant : MonoBehaviour {
 	{
 		Debug.Log("got the paper");
 		GameObject.Find ("paperInServantRoom").gameObject.renderer.enabled=false;
-		transform.FindChild("paperOnServant").gameObject.renderer.enabled=true;
+		GameObject.Find("paperOnServant").gameObject.renderer.enabled=true;
 		
 		getServantRoomScene().getAction().didServantPickThePaper_D=true;
 		GameCharConst.SERVANT_PICK_THE_PAPER=true;
@@ -598,7 +629,7 @@ public class Servant : MonoBehaviour {
 	public void dropPaper()
 	{
 		Debug.Log("drop the paper");
-		transform.FindChild("paperOnServant").gameObject.renderer.enabled=false;
+		GameObject.Find("paperOnServant").gameObject.renderer.enabled=false;
 		GameObject.Find ("paperInThroneRoom").renderer.enabled=true;
 		
 		getThroneRoomScene().getAction().didServantDropThePaper_D=true;
@@ -610,7 +641,7 @@ public class Servant : MonoBehaviour {
 	{
 		Debug.Log("servant pick letter");
 		//transform.FindChild();
-		transform.FindChild("letterOnServant").gameObject.renderer.enabled=true;
+		GameObject.Find("letterOnServant").gameObject.renderer.enabled=true;
 		GameObject.Find ("letterInThrone").renderer.enabled=false;
 		
 		getThroneRoomScene().getAction().didServantPickUpTheLetter_D=true;
@@ -622,7 +653,7 @@ public class Servant : MonoBehaviour {
 	{
 		Debug.Log("servant drop letter");
 		
-		transform.FindChild("letterOnServant").gameObject.renderer.enabled=false;
+		GameObject.Find("letterOnServant").gameObject.renderer.enabled=false;
 		GameObject.Find ("letterInServantRoom").renderer.enabled=true;
 		
 		getServantRoomScene().getAction().didServantDropTheLetterOnHisDesk_D=true;
@@ -690,7 +721,9 @@ public class Servant : MonoBehaviour {
 		GameObject.Find("Servant").transform.FindChild("Servant").renderer.material.color = new Color(1f, 1f, 1f, 0.1f);
 
 		if(ThroneGameController.currentChar=="Servant")
-			Invoke("dieAndReturenToSelection", 5.0f);
+			Invoke("dieAndReturenToSelection", 1.0f);
+
+		die();
 	}
 
 	public void dieAndReturenToSelection()
@@ -700,6 +733,9 @@ public class Servant : MonoBehaviour {
 
 	public void fireBigger()
 	{
+		smallFire.renderer.enabled = false;
+		bigFire.renderer.enabled = true;
+
 		//GameObject.Find("firePlace").transform.FindChild("fireSmall").renderer.enabled=false;
 		//GameObject.Find("firePlace").transform.FindChild("fireBig").gameObject.renderer.enabled=true;
 

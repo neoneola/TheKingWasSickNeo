@@ -100,6 +100,7 @@
      <Compile Include="Assets\Scripts\ThroneRoom\PaperShelf.cs" />
      <Compile Include="Assets\Scripts\ThroneRoom\PotionShelf.cs" />
      <Compile Include="Assets\Scripts\ThroneRoom\RingHolder.cs" />
+     <Compile Include="Assets\Scripts\ThroneRoom\RoonNameIMage.cs" />
      <Compile Include="Assets\Scripts\ThroneRoom\ThroneButtons.cs" />
      <Compile Include="Assets\Scripts\ThroneRoom\ThroneGameController.cs" />
      <Compile Include="Assets\Scripts\ThroneRoom\WrongPotionHolder.cs" />

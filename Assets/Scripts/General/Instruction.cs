@@ -15,9 +15,12 @@ public class Instruction : MonoBehaviour {
 	public float fadeOutTime = 2f;
 	public float fadeOutTimer = 0f;
 
+	public GameObject interbg;
+
 	void Awake(){
 		king = GameObject.FindGameObjectWithTag(Tags.KING).GetComponent<King>();
 		servant = GameObject.FindGameObjectWithTag(Tags.SERVANT).GetComponent<Servant>();
+		interbg = GameObject.Find("InteractionBG");
 	}
 
 	// Use this for initialization
@@ -35,8 +38,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Take Medicine";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -46,8 +50,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Pick up Letter";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -57,8 +62,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Signed Letter";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -68,8 +74,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Pick up Logs";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -77,8 +84,9 @@ public class Instruction : MonoBehaviour {
 
 	public void servantdropTheLetter(){
 		if(switchOn){
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Drop the letter";
+			showbg();
 		}
 	}
 
@@ -86,8 +94,9 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			if(servant.getThroneRoomScene().getAction().didServantPickTheLog_D && !servant.getThroneRoomScene().getAction().didServantDropTheLog_D){
-				text.color = new Color(1f, 1f, 1f, 1.0f);
+				showText();
 				text.text="Add logs to fire";
+				showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 			}
 		}
@@ -98,11 +107,13 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			if(!servant.getThroneRoomScene().getAction().didServantDropTheLog_D){
-				text.color = new Color(1f, 1f, 1f, 1.0f);
+				showText();
 				text.text="Attempt to warm Hands";
+				showbg();
 			}else{
-				text.color = new Color(1f, 1f, 1f, 1.0f);
+				showText();
 				text.text="Warm Hands";
+				showbg();
 			}
 
 			//Invoke ("disappear",fadeOutSpeed);
@@ -112,8 +123,9 @@ public class Instruction : MonoBehaviour {
 
 	public void signTheLetter(){
 		if(switchOn){
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Sign Letter";
+			showbg();
 		}
 	}
 
@@ -121,8 +133,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Enter Servant’s Room";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -133,11 +146,13 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			if(!king.getThroneRoomScene().getAction().didKingWarmHisHand_D){
-				text.color = new Color(1f, 1f, 1f, 1.0f);
+				showText();
 				text.text="The door is cold";
+				showbg();
 			}else{
-				text.color = new Color(1f, 1f, 1f, 1.0f);
+				showText();
 				text.text="Enter King’s Room";
+				showbg();
 			}
 
 		}
@@ -148,8 +163,9 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Enter Throne Room";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -159,21 +175,30 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
+			showText();
 			text.text="Wear Signet ring";
+			showbg();
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
 	}
 	
+	private void showText(){
+		text.color = new Color(text.color.r, text.color.g, text.color.b, 1.0f);
+	}
 
 	public void disappear()
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 0.0f);
+			text.color = new Color(text.color.r, text.color.g, text.color.b, 0.0f);
+			interbg.GetComponent<Image>().enabled = false;
 		}
 
+	}
+
+	private void showbg(){
+		interbg.GetComponent<Image>().enabled = true;
 	}
 
 	public void fadeOut()

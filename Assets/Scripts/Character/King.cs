@@ -91,6 +91,8 @@ public class King : MonoBehaviour {
 		return kingRoomScene;
 	}
 
+	// animation
+	private Animator animator;
 
 	void Awake(){
 		//kingroom******************
@@ -110,7 +112,7 @@ public class King : MonoBehaviour {
 		servantObj = GameObject.Find ("Servant");
 		servant=servantObj.GetComponent<Servant>();
 
-
+		animator = transform.FindChild("king").GetComponent<Animator>();
 
 	}
 
@@ -429,15 +431,26 @@ public class King : MonoBehaviour {
 
 	private void checkFace(float diff){
 		if(diff > 0){
-			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+			Vector3 scale = transform.localScale;
+			if(scale.x < 0){
+				scale.x *= -1;
+			}
+			
+			transform.localScale = scale;
 		}else{
-			transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+			
+			Vector3 scale = transform.localScale;
+			if(scale.x > 0){
+				scale.x *= -1;
+			}
+			
+			transform.localScale = scale;
 		}
 	}
 
 	public bool gotoPostion(Vector2 targetPosition){
 		//transform.position = Vector2.Lerp(transform.position,targetPosition, Time.deltaTime);
-
+		walk();
 		transform.position = Vector2.Lerp(transform.position,new Vector2( targetPosition.x,transform.position.y), Time.deltaTime);
 		checkFace(targetPosition.x - transform.position.x);
 		return checkTargetPosition(targetPosition);
@@ -483,7 +496,7 @@ public class King : MonoBehaviour {
 	{
 		Debug.Log("got the ring");
 		GameObject.Find ("ringInKingRoom").transform.renderer.enabled=false;
-		transform.FindChild("ringOnKing").gameObject.renderer.enabled=true;
+		GameObject.Find("ringOnKing").gameObject.renderer.enabled=true;
 		
 		getThroneRoomScene().getAction().didKingPickTheRing_D=true;
 		GameCharConst.KING_PICK_THE_RING=true;
@@ -620,9 +633,23 @@ public class King : MonoBehaviour {
 
 		if(ThroneGameController.currentChar=="King")
 
-			Invoke("dieAndReturenToSelection", 5.0f);
+			Invoke("dieAndReturenToSelection", 1.5f);
+
+		die();
 
 		//Invoke ("dieAndReturenToSelection",0.5f);
+	}
+
+	public void die(){
+		animator.SetBool("DieOfTooMuchMedicine", true);
+	}
+
+	public void walk(){
+		animator.SetBool("IsWalking", true);
+	}
+	
+	public void stopWalk(){
+		animator.SetBool("IsWalking", false);
 	}
 
 	public void dieAndReturenToSelection()
@@ -636,7 +663,7 @@ public class King : MonoBehaviour {
 		GameObject.Find ("paperInThroneRoom").transform.renderer.enabled = false;
 		//Destroy(GameObject.Find ("paperInThroneRoom"));
 		GameObject.Find ("letterInThrone").transform.renderer.enabled = true;
-		transform.FindChild("ringOnKing").gameObject.renderer.enabled=false;
+		GameObject.Find("ringOnKing").gameObject.renderer.enabled=false;
 		GameObject.Find ("ringOnLetterShelf").renderer.enabled = true;
 		
 		getThroneRoomScene().getAction().didKingSignTheLetter_D=true;
