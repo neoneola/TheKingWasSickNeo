@@ -21,6 +21,8 @@ public class CameraSwitcher : MonoBehaviour {
 	{
 		ActivateFalse();
 		cameraKingRoom.SetActive(true);
+		cameraKingRoom.GetComponent<CameraFollow>().setPlayer(ThroneGameController.currentChar);
+		Debug.Log(ThroneGameController.currentChar);
 	}
 
 	public static void changeToThroneRoom()

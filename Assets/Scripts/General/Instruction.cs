@@ -9,9 +9,16 @@ public class Instruction : MonoBehaviour {
 	public Text text;
 	public bool switchOn=true;
 
+	private King king;
+	private Servant servant;
 
 	public float fadeOutTime = 2f;
 	public float fadeOutTimer = 0f;
+
+	void Awake(){
+		king = GameObject.FindGameObjectWithTag(Tags.KING).GetComponent<King>();
+		servant = GameObject.FindGameObjectWithTag(Tags.SERVANT).GetComponent<Servant>();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +36,7 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Pill";
+			text.text="Take Medicine";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -40,7 +47,7 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Unsigned Letter";
+			text.text="Pick up Letter";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -62,21 +69,52 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Logs";
+			text.text="Pick up Logs";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
+	}
+
+	public void servantdropTheLetter(){
+		if(switchOn){
+			text.color = new Color(1f, 1f, 1f, 1.0f);
+			text.text="Drop the letter";
+		}
+	}
+
+	public void putdownLog(){
+		if(switchOn)
+		{
+			if(servant.getThroneRoomScene().getAction().didServantPickTheLog_D && !servant.getThroneRoomScene().getAction().didServantDropTheLog_D){
+				text.color = new Color(1f, 1f, 1f, 1.0f);
+				text.text="Add logs to fire";
+			//Invoke ("disappear",fadeOutSpeed);
+			}
+		}
 	}
 
 	public void findFirePlace()
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Fire Place";
+			if(!servant.getThroneRoomScene().getAction().didServantDropTheLog_D){
+				text.color = new Color(1f, 1f, 1f, 1.0f);
+				text.text="Attempt to warm Hands";
+			}else{
+				text.color = new Color(1f, 1f, 1f, 1.0f);
+				text.text="Warm Hands";
+			}
+
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
+	}
+
+	public void signTheLetter(){
+		if(switchOn){
+			text.color = new Color(1f, 1f, 1f, 1.0f);
+			text.text="Sign Letter";
+		}
 	}
 
 	public void findDoorToServantRoom()
@@ -84,7 +122,7 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Door To Servant Room";
+			text.text="Enter Servant’s Room";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -94,9 +132,14 @@ public class Instruction : MonoBehaviour {
 	{
 		if(switchOn)
 		{
-			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Door To King Room";
-			//Invoke ("disappear",fadeOutSpeed);
+			if(!king.getThroneRoomScene().getAction().didKingWarmHisHand_D){
+				text.color = new Color(1f, 1f, 1f, 1.0f);
+				text.text="Attempt to enter King’s Room";
+			}else{
+				text.color = new Color(1f, 1f, 1f, 1.0f);
+				text.text="Enter King’s Room";
+			}
+
 		}
 
 	}
@@ -106,7 +149,7 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Door To Throne Room";
+			text.text="Enter Throne Room";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 
@@ -117,7 +160,7 @@ public class Instruction : MonoBehaviour {
 		if(switchOn)
 		{
 			text.color = new Color(1f, 1f, 1f, 1.0f);
-			text.text="Ring To Sign Letter";
+			text.text="Wear Signet ring";
 			//Invoke ("disappear",fadeOutSpeed);
 		}
 

@@ -503,22 +503,58 @@ public class Servant : MonoBehaviour {
 	}
 	*/
 
+	//transform.position.x - targetPosition.x
+	private void checkFace(float diff){
+		if(diff > 0){
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+		}else{
+			transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+		}
+	}
 
 	public bool gotoPostion(Vector2 targetPosition){
 		//transform.position = Vector2.Lerp(transform.position,targetPosition, Time.deltaTime);
 		
 		transform.position = Vector2.Lerp(transform.position,new Vector2( targetPosition.x,transform.position.y), Time.deltaTime);
+		checkFace(targetPosition.x - transform.position.x);
 		return checkTargetPosition(targetPosition);
 	}
 	
 	public bool checkTargetPosition(Vector2 targetPosition){
 		//if(Vector2.Distance(transform.position, targetPosition) < 1.5f )
-		if(Mathf.Abs(transform.position.x-targetPosition.x)<0.5f&&Mathf.Abs(transform.position.y-targetPosition.y)<5.0f)
+		if(Mathf.Abs(transform.position.x-targetPosition.x)<0.5f)
 		{
 			return true;
 		}
 		return false;
 	}
+
+//	public bool gotoPostion(Vector2 targetPosition){
+//
+//		transform.position = new Vector2(GetBetweenPoint(transform.position, targetPosition, 0.1f).x, transform.position.y);
+//		checkFace(targetPosition.x - transform.position.x);
+//
+//		return checkTargetPosition(targetPosition);
+//	}
+//	
+//	public bool checkTargetPosition(Vector2 targetPosition){
+//
+//		Debug.Log(transform.position.x - targetPosition.x);
+//
+//		if(transform.position.x - targetPosition.x < 0.1f)
+//		{
+//			transform.position = new Vector2(targetPosition.x,transform.position.y);
+//
+//			return true;
+//		}
+//		return false;
+//	}
+//
+//	private Vector2 GetBetweenPoint(Vector2 start, Vector2 end, float speed)
+//	{
+//		Vector2 normal = (end - start).normalized;
+//		return normal * speed + start;
+//	}
 	
 	//**************memory part preperation********************
 
@@ -591,7 +627,7 @@ public class Servant : MonoBehaviour {
 		
 		getServantRoomScene().getAction().didServantDropTheLetterOnHisDesk_D=true;
 		GameCharConst.SERVANT_DROP_THE_LETTER_ON_HIS_DESK=true;
-		
+		Debug.Log("You Win");
 		isHandsFull=false;
 	}
 	public void takeMedicine()

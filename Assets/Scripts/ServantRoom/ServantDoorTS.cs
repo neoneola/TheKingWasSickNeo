@@ -28,26 +28,26 @@ public class ServantDoorTS : MonoBehaviour {
 			Debug.Log("can go to servant room");
 		}
 
-		if (ThroneGameController.currentChar == other.name)
+		if (ThroneGameController.currentChar == "Servant")
 			instruction.findDoorToServantRoom();
 	}
 	
 	
 	void OnTriggerStay2D(Collider2D other){
-		
-		if(servantReadyToGoTS)
-		{
-			float targetPositionX=theOtherHole.position.x;
-			float targetPositionY=theOtherHole.position.y;
-			
-			
-			if(isLeft)
-				other.transform.position=new Vector2(targetPositionX+offset,other.transform.position.y);
-			else
-				other.transform.position=new Vector2(targetPositionX-offset,other.transform.position.y);
-			Debug.Log("servant transport");
+		if(other.gameObject.name =="Servant"){
+			if(servantReadyToGoTS)
+			{
+				float targetPositionX=theOtherHole.position.x;
+				float targetPositionY=theOtherHole.position.y;
+				
+				
+				if(isLeft)
+					other.transform.position=new Vector2(targetPositionX+offset,other.transform.position.y);
+				else
+					other.transform.position=new Vector2(targetPositionX-offset,other.transform.position.y);
+				Debug.Log("servant transport");
+			}
 		}
-		
 	}
 	
 	

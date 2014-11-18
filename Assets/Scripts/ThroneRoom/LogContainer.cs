@@ -21,10 +21,12 @@ public class LogContainer : MonoBehaviour {
 			servant.canPickLog = true;
 			
 			Debug.Log("can get log");
+			if(ThroneGameController.currentChar == "Servant"){
+				if(transform.FindChild("log").renderer.enabled==true){
+					instruction.findLogs ();
+				}
+			}
 		}
-
-		if (ThroneGameController.currentChar == other.name&&transform.FindChild("log").renderer.enabled==true)
-			instruction.findLogs ();
 	}
 	
 	void OnTriggerExit2D(Collider2D other){

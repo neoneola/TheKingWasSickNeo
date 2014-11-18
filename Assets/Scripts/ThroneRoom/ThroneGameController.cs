@@ -88,10 +88,9 @@ public class ThroneGameController : MonoBehaviour {
 
 		default:
 			break;
-			cameraFollow.setPlayer(ThroneGameController.currentChar);
-
 		}
 
+		cameraFollow.setPlayer(ThroneGameController.currentChar);
 	}
 	
 	// Update is called once per frame

@@ -181,7 +181,8 @@ public class King : MonoBehaviour {
 				}
 				
 				
-				if(canPassKingDoorTK)
+				if(canPassKingDoorTK && getThroneRoomScene().getAction().didKingWarmHisHand_D)
+				if(canPassKingDoorTK )
 				{
 					CameraSwitcher.changeToKingRoom();
 					passKingDoorTK();
@@ -251,7 +252,7 @@ public class King : MonoBehaviour {
 								goto_medicineShelf=false;
 								takeMedicine();
 								getThroneRoomScene().getAction().didKingTakeMedicineOnTime_D=true;
-								goto_doorToKingRoom_toGetRing=true;
+								goto_firePlace=true;
 
 							}
 						}
@@ -277,6 +278,34 @@ public class King : MonoBehaviour {
 
 				}
 			}
+
+
+			//above is good
+			if(goto_firePlace)
+			{
+				if(GameCharConst.KING_WARM_HIS_HAND)
+				{
+					if(servant.getThroneRoomScene().getAction().didServantDropTheLog_D)
+					{
+						if(gotoPostion(firePlace.transform.position))
+						{
+							goto_firePlace=false;
+							warmHand();
+							getThroneRoomScene().getAction().didKingWarmHisHand_D=true;
+							goto_doorToKingRoom_toGetRing=true;
+						}
+					}
+					
+				}
+				else
+				{
+					goto_firePlace=false;
+					goto_doorToKingRoom_toGetRing=true;
+				}
+				
+			}
+
+
 
 			if(goto_doorToKingRoom_toGetRing)
 			{
@@ -318,40 +347,17 @@ public class King : MonoBehaviour {
 					{
 						goto_doorInKingRoomToThrone_toWarmHand=false;
 						passKingDoorKT();
-						goto_firePlace=true;
+						goto_letterShelf=true;
 					}
 				}
 				else
 				{
 					goto_doorInKingRoomToThrone_toWarmHand=false;
-					goto_firePlace=true;
-				}
-
-			}
-			//above is good
-			if(goto_firePlace)
-			{
-				if(GameCharConst.KING_WARM_HIS_HAND)
-				{
-					if(servant.getThroneRoomScene().getAction().didServantDropTheLog_D)
-					{
-						if(gotoPostion(firePlace.transform.position))
-						{
-							goto_firePlace=false;
-							warmHand();
-							getThroneRoomScene().getAction().didKingWarmHisHand_D=true;
-							goto_letterShelf=true;
-						}
-					}
-
-				}
-				else
-				{
-					goto_firePlace=false;
 					goto_letterShelf=true;
 				}
 
 			}
+
 			if(goto_letterShelf)
 			{
 				if(GameCharConst.KING_SIGN_THE_LETTER)
@@ -421,10 +427,20 @@ public class King : MonoBehaviour {
 
 
 	//**************memory preparation part********************
+
+	private void checkFace(float diff){
+		if(diff > 0){
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+		}else{
+			transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+		}
+	}
+
 	public bool gotoPostion(Vector2 targetPosition){
 		//transform.position = Vector2.Lerp(transform.position,targetPosition, Time.deltaTime);
 
 		transform.position = Vector2.Lerp(transform.position,new Vector2( targetPosition.x,transform.position.y), Time.deltaTime);
+		checkFace(targetPosition.x - transform.position.x);
 		return checkTargetPosition(targetPosition);
 	}
 	
@@ -638,6 +654,7 @@ public class King : MonoBehaviour {
 	{
 		//if (theMomentWhenKeyPress) 
 		{
+			canPassKingDoorTK = false;
 			Debug.Log("decide to pass the door to King room");
 			KingDoorTK kingDoorToKing;
 			kingDoorToKing=GameObject.Find("doorToKingRoom").GetComponent<KingDoorTK>();

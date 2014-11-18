@@ -19,13 +19,13 @@ public class PlayerMovementController : MonoBehaviour {
 	/// deal with input.
 	/// </summary>
 	void FixedUpdate(){
-		float h = Input.GetAxis("Horizontal");
-		move(h);
+
 	}
 
 	// Update is called once per frame
 	void Update () {
-	
+		float h = Input.GetAxis("Horizontal");
+		move(h);
 	}
 
 	// handler
@@ -58,8 +58,8 @@ public class PlayerMovementController : MonoBehaviour {
 		}
 
 		// Move the character
-		rigidbody2D.velocity = new Vector2(horizontal * maxSpeed, rigidbody2D.velocity.y);
-		
+		//rigidbody2D.velocity = new Vector2(horizontal * maxSpeed, rigidbody2D.velocity.y);
+		transform.Translate(new Vector2(horizontal * maxSpeed * Time.deltaTime, rigidbody2D.velocity.y));
 		// If the input is moving the player right and the player is facing left...
 		if(horizontal > 0 && !facingRight)
 			// ... flip the player.

@@ -143,6 +143,7 @@ public class Hermit : MonoBehaviour {
 	//**************memory preparation part********************
 	public bool gotoPostion(Vector2 targetPosition){
 		transform.position = Vector2.Lerp(transform.position, targetPosition, Time.deltaTime);
+
 		return checkTargetPosition(targetPosition);
 	}
 	

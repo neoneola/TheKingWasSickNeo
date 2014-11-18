@@ -19,6 +19,12 @@ public class LetterHolderThrone : MonoBehaviour {
 			king.canSignTheLetterWithRing = true;
 			
 			Debug.Log("king can sign paper with ring");
+
+			if(ThroneGameController.currentChar == "King"){
+				if(king.getThroneRoomScene().getAction().didKingPickTheRing_D && ! king.getThroneRoomScene().getAction().didKingSignTheLetter_D){
+					instruction.signTheLetter();
+				}
+			}
 		}
 
 		if (other.gameObject.name == "Servant") 
@@ -26,19 +32,13 @@ public class LetterHolderThrone : MonoBehaviour {
 			Servant servant=other.gameObject.GetComponent<Servant>();		
 			servant.canDropPaper=true;
 			servant.canPickLetter=true;
-
+			if(ThroneGameController.currentChar == "Servant"){
+				if(!servant.getThroneRoomScene().getAction().didServantDropThePaper_D && servant.getServantRoomScene().getAction().didServantPickThePaper_D ){
+					instruction.servantdropTheLetter();
+				}
+			}
 			Debug.Log("Servant can drop the paper or letter");
 		}
-		if (ThroneGameController.currentChar == other.name)
-			if(transform.FindChild("paperInThroneRoom").renderer.enabled==true)
-			{
-				instruction.findUnsignedLetter();
-			}
-			else if(transform.FindChild("letterInThrone").renderer.enabled==true)
-			{
-				instruction.findSignedLetter();
-			}
-			
 	}
 	
 	void OnTriggerExit2D(Collider2D other){

@@ -21,6 +21,10 @@ public class FirePlace : MonoBehaviour {
 			servant.canDropLog = true;
 			
 			Debug.Log("can drop log");
+
+			if(ThroneGameController.currentChar == "Servant"){
+				instruction.putdownLog();
+			}
 		}
 
 		if (other.gameObject.name == "King") 
@@ -28,10 +32,13 @@ public class FirePlace : MonoBehaviour {
 			King king=other.gameObject.GetComponent<King>();
 			king.canWarmHand=true;
 			Debug.Log("can warm hand");
-		}
 
-		if (ThroneGameController.currentChar == other.name)
-			instruction.findFirePlace();
+			if (ThroneGameController.currentChar == "King"){
+				if(!king.getThroneRoomScene().getAction().didKingWarmHisHand_D){
+					instruction.findFirePlace();
+				}
+			}
+		}
 	}
 	
 	void OnTriggerExit2D(Collider2D other){

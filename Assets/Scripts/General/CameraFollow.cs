@@ -20,13 +20,15 @@ public class CameraFollow : MonoBehaviour
 		if(ThroneGameController.currentChar != ""){
 			player = GameObject.FindGameObjectWithTag(ThroneGameController.currentChar).transform;
 			assignedPlayer = true;
+			Debug.Log("camera choose"+player);
 		}
 	}
 
 	bool CheckXMargin()
 	{
 		// Returns true if the distance between the camera and the player in the x axis is greater than the x margin.
-		return Mathf.Abs(transform.position.x - player.position.x) > xMargin;
+		//return Mathf.Abs(transform.position.x - player.position.x) > xMargin;
+		return true;
 	}
 
 

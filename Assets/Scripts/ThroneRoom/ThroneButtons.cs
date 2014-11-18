@@ -31,7 +31,6 @@ public class ThroneButtons : MonoBehaviour {
 		case "King":
 			ThroneGameController.currentChar = Tags.KING;
 			Scenes.LoadLevel(Scenes.THRONE);
-			Debug.Log("click king"+ThroneGameController.currentChar);
 			break;
 
 		case "Servant":
@@ -55,6 +54,61 @@ public class ThroneButtons : MonoBehaviour {
 		}
 	}
 
+	void OnMouseEnter(){
+		
+		switch (gameObject.name) {
+			
+		case "Hermit":
+			break;
+			
+		case "Thief":
+			break;
+			
+		case "King":
+			GameObject.Find("king_1").renderer.enabled = true; 
+			break;
+			
+		case "Servant":
+			GameObject.Find("servant_1").renderer.enabled = true; 
+			break;
+			
+		case "Mouse":
+			break;
+			
+		case "Bird":
+			break;
+			
+		default:
+			break;
+		}
+	}
 
-
+	void OnMouseExit(){
+		
+		switch (gameObject.name) {
+			
+		case "Hermit":
+			break;
+			
+		case "Thief":
+			break;
+			
+		case "King":
+			GameObject.Find("king_1").renderer.enabled = false; 
+			break;
+			
+		case "Servant":
+			GameObject.Find("servant_1").renderer.enabled = false; 
+			break;
+			
+		case "Mouse":
+			break;
+			
+		case "Bird":
+			break;
+			
+		default:
+			break;
+		}
+	}
 }

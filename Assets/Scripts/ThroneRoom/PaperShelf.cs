@@ -19,7 +19,12 @@ public class PaperShelf : MonoBehaviour {
 			Servant servant = other.gameObject.GetComponent<Servant>();
 			servant.canPickPaper = true;
 			servant.canDropLetter=true;
-			
+
+			if(ThroneGameController.currentChar == "Servant"){
+				if(!servant.getServantRoomScene().getAction().didServantPickThePaper_D){
+					instruction.findUnsignedLetter();
+				}
+			}
 			Debug.Log("servant can pick paper or drop letter");
 		}
 
@@ -29,15 +34,6 @@ public class PaperShelf : MonoBehaviour {
 
 			
 			Debug.Log("Bird can pick letter");
-		}
-		if (ThroneGameController.currentChar == other.name)
-			if(transform.FindChild("paperInServantRoom").renderer.enabled==true)
-		{
-			instruction.findUnsignedLetter();
-		}
-		else if(transform.FindChild("letterInServantRoom").renderer.enabled==true)
-		{
-			instruction.findSignedLetter();
 		}
 	}
 	
