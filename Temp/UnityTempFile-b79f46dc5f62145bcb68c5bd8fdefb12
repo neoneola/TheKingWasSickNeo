@@ -43,8 +43,6 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
--define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 'Assets/PocketRPG Trails/Scripts/Effects/WeaponTrail.cs'
 'Assets/PocketRPG Trails/Scripts/Entities/BladeMaster.cs'
 'Assets/PocketRPG Trails/Scripts/Utility/AnimationController.cs'

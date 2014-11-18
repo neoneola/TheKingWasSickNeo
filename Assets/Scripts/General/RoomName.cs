@@ -32,4 +32,14 @@ public class RoomName : MonoBehaviour {
 		}
 
 	}
+
+
+	public void disappear()
+	{
+		if(switchOn)
+		{
+			text.color = new Color(1f, 1f, 1f, 0.0f);
+		}
+		
+	}
 }

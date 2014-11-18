@@ -116,7 +116,7 @@ public class King : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Invoke("takeMedicineCountDown",whenToTakeMedicine);
+		//Invoke("takeMedicineCountDown",whenToTakeMedicine);
 
 
 		if(ThroneGameController.currentChar != Tags.KING){
@@ -238,6 +238,10 @@ public class King : MonoBehaviour {
 
 			//******memory part throneroom***************************
 
+
+
+			//pill time**************
+			/*
 			if(goto_medicineShelf)
 			{
 				if(GameCharConst.KING_TAKE_MEDICINE_ON_TIME)
@@ -256,14 +260,6 @@ public class King : MonoBehaviour {
 
 							}
 						}
-					//}
-					/*
-					else
-					{
-						goto_medicineShelf=false;
-						goto_ringHolder=true;
-					}
-					*/
 
 
 				}
@@ -278,6 +274,9 @@ public class King : MonoBehaviour {
 
 				}
 			}
+			*/
+
+			//pill time*****************
 
 
 			//above is good
@@ -473,7 +472,7 @@ public class King : MonoBehaviour {
 	//**************memory part throneroom******************************
 	public void startMemoryThroneRoom()
 	{
-		goto_medicineShelf = true;
+		goto_firePlace = true;
 	}
 
 	//**************memory part throneroom******************************

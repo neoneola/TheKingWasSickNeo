@@ -47,8 +47,6 @@
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_OSX
--define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 'Assets/SpritesAndBones/Scripts/Editor/AlphaNumericSort.cs'
 'Assets/SpritesAndBones/Scripts/Editor/AnimationToPNGMenu.cs'
 'Assets/SpritesAndBones/Scripts/Editor/BoneEditor.cs'
