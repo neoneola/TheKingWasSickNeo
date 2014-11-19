@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMovementController : MonoBehaviour {
 
-	public float maxSpeed = 20.0f;
+	public float maxSpeed = 15.0f;
 
 	private bool facingRight = true;
 

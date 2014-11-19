@@ -48,10 +48,10 @@ public class King : MonoBehaviour {
 
 
 	//medicine
-	public int maxPillNum=3;
+	public int maxPillNum=1;
 	private int curPillNum=0;
 	private float firstPillTime;
-	public float timeLimit=3.0f;
+	public float timeLimit=1.0f;
 
 	public bool timeToTakeMedicine=false;
 	public float whenToTakeMedicine=5.0f;
@@ -460,6 +460,7 @@ public class King : MonoBehaviour {
 		//if(Vector2.Distance(transform.position, targetPosition) < 1.5f )
 		if(Mathf.Abs(transform.position.x-targetPosition.x)<0.5f)
 		{
+			stopWalk();
 			return true;
 		}
 		return false;
